@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+    <link rel="stylesheet" href="css/createProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <a class="brand" href="index.html">Shopping Cart</a>
+
+                <nav>
+
+                    <ul id="links">
+
+                        <li> <a href="login.html">Sign In</a> </li>
+                        <li> <a href="register.html">Sign Up</a> </li>
+                    </ul>
+
+                    <ul id="user_info">
+
+                        <li id="en_lang">En</li>
+                        <li id="ar_lang">Ar</li>
+                        <li> <a href="#" id="user"></a> </li>
+                        <li> <a href="profile.html"></a> </li>
+                        <li> <a href="favorite.html">Favorites</a> </li>
+                        <li class="shoppingCart"> 
+
+                            <i class="fas fa-shopping-cart"></i> 
+                            <span class="badge"></span>
+
+                            <div class="carts-products">
+
+                                <div></div>
+                                <a href="cartProducts.html">View All Products</a>
+                            </div>
+                        </li>
+                        <li> <a href="#" id="logout">Logout</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="create-product-page">
+
+        <div class="container">
+
+            <form id="update-form">
+
+                <input type="text" placeholder="Product Name..." id="product-name">
+                <input type="text" placeholder="Description..." id="product-desc">
+                <input type="file" id="upload-image">
+    
+                <select name="" id="product-size">
+                    
+                    <option value="" hidden>Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <input type="submit" value="Update" id="update-product-button">
+            </form>
+        </div>
+
+    </section>
+    
+
+    <script src="js/checkUser.js"></script>
+    <script src="js/changeDir.js"></script>
+    <script src="js/editProduct.js"></script>
+</body>
+
+</html>

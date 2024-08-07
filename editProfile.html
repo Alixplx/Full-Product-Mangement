@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <a class="brand" href="index.html">Shopping Cart</a>
+
+                <nav>
+
+                    <ul id="links">
+
+                        <li> <a href="login.html">Sign In</a> </li>
+                        <li> <a href="register.html">Sign Up</a> </li>
+                    </ul>
+
+                    <ul id="user_info">
+
+                        <li id="en_lang">En</li>
+                        <li id="ar_lang">Ar</li>
+                        <li> <a href="#" id="user"></a> </li>
+                        <li> <a href="profile.html">Profile</a> </li>
+                        <li> <a href="favorite.html">Favorites</a> </li>
+                        <li> <a href="#" id="logout">Logout</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="edit-profile-page">
+
+        <div class="container">
+
+            <form id="edit-profile-form">
+
+                <input type="text" id="changeUserName">
+                <input type="email" id="changeEmail">
+                <input type="file" id="changeImage">
+
+                <input type="submit" value="Edit Profile" id="editProfileButton">
+            </form>
+        </div>
+
+    </section>
+    
+
+    <script src="js/checkUser.js"></script>
+    <script src="js/changeDir.js"></script>
+    <script src="js/editProfile.js"></script>
+</body>
+
+</html>
